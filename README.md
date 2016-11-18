@@ -10,7 +10,7 @@ Term: Fall 2016
 + [Data description](doc/readme.html)
 + Contributor's name:Kyongmook Lim(kl2766)
 + Projec title: music and lyric
-+ Project summary: the goal of this project is to find the relationship between music and lyric. To achieve this, i used classfication method. 
++ Project summary: the goal of this project is to find the relationship between music and lyric. To achieve this, i used classfication method, topic modeling.
 	
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
