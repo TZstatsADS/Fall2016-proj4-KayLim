@@ -6,7 +6,7 @@
 # and we have our "clusters", which is obtained based on topic clustering
 # then we have a label (cluster) for each data point (music)
 # random forest
-# now we will use random forest to do multi\ple classification
+# now we will use random forest to do multiple classification
 getwd()
 setwd("C:/Users/LEE/Desktop/project4")
 music_feature<-read.csv("train.csv")
@@ -25,3 +25,8 @@ music_rf<-randomForest(music_feature_train,music_label_train,importance=T,proxim
 music_rf_pre<-predict(music_rf,music_feature_test,type="vote",norm.votes=T)
 
 write.csv(music_rf,"topics_labels.csv")
+# test
+setwd(data_output_path)
+music_feature<-read.csv("test.csv")
+music_rf_pre<-predict(music_rf,music_feature,type="vote",norm.votes=T)
+write.csv(music_rf_pre,file = paste(data_output_path, "prediction_100.csv", sep=""))
