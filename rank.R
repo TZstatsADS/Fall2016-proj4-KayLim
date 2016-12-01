@@ -17,3 +17,5 @@ for (i in 1:nrow(result)){
 }
 
 result
+
+write.csv(result, file=paste(data_output_path, "result.csv",sep=""))
