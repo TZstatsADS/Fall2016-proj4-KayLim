@@ -1,7 +1,7 @@
 # read the label and test #
 setwd("C:/Users/LEE/Desktop/project4/Data")
-prob_yq<-read.csv("adjust.csv")
-prob_test<-read.csv("topic_label.csv")
+prob_yq<-read.csv("adjust_prob.csv")
+prob_test<-read.csv("topics_labels.csv")
 
 name=prob_yq[,2]
 name<-as.character(name)
