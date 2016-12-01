@@ -1,3 +1,5 @@
+#convert strings to matrix
+
 matrix_convert <- function(text_string, language) {
         text <- as.vector(text_string)
         matx <- create_matrix(text_string, language = language)
