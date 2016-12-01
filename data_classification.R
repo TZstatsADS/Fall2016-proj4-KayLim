@@ -25,8 +25,3 @@ music_rf<-randomForest(music_feature_train,music_label_train,importance=T,proxim
 music_rf_pre<-predict(music_rf,music_feature_test,type="vote",norm.votes=T)
 
 write.csv(music_rf,"topics_labels.csv")
-# knn
-# now we will use knn to do multiple classification
-library(caret)
-music_knn<-knn3(music_feature_train,music_label_train,k=10)
-music_knn_pre<-predict(music_knn,music_feature_test)
