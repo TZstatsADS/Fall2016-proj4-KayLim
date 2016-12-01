@@ -1,5 +1,5 @@
 # read the label and test #
-setwd("/Users/Cristina/Desktop/16 Fall/5243 ADS/Project 4/data/")
+setwd("C:/Users/LEE/Desktop/project4/Data")
 prob_yq<-read.csv("adjust.csv")
 prob_test<-read.csv("topic_label.csv")
 
