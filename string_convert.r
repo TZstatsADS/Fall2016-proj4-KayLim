@@ -1,3 +1,5 @@
+#convert lyr terms to strings.
+
 string_convert <- function(lyr) {
         result <- data.frame()
         for (row in 1:(nrow(lyr))) {
