@@ -10,7 +10,8 @@ matx <- matrix_convert(md, 'english')
 
 k <- 5
 
-lda <- LDA(matx, 10)
+lda <- LDA(matx, 10)# use LDA to find a linear combination of the predictors 
+#that gives maximum separation between the centers of the data while at the same time minimizing the variation within each group of data
 
 output_topics <- terms(lda,100)
 
